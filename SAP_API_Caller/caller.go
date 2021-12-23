@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"net/http"
-	sap_api_output_formatter "sap-api-integrations-sales-pricing-condition-reads/SAP_API_Output_Formatter"
+	sap_api_output_formatter "sap-api-integrations-sales-pricing-reads/SAP_API_Output_Formatter"
 	"strings"
 	"sync"
 

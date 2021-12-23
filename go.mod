@@ -1,4 +1,4 @@
-module sap-api-integrations-sales-pricing-condition-reads
+module sap-api-integrations-sales-pricing-reads
 
 go 1.17
 

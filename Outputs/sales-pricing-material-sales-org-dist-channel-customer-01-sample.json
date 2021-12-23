@@ -1,6 +1,6 @@
 {
-	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-pricing-condition-reads/SAP_API_Caller/caller.go#L236",
-	"function": "sap-api-integrations-sales-pricing-condition-reads/SAP_API_Caller.(*SAPAPICaller).MaterialSalesOrgDistChannelCustomer",
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-sales-pricing-reads/SAP_API_Caller/caller.go#L236",
+	"function": "sap-api-integrations-sales-pricing-reads/SAP_API_Caller.(*SAPAPICaller).MaterialSalesOrgDistChannelCustomer",
 	"level": "INFO",
 	"message": [
 		{

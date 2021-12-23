@@ -12,17 +12,17 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o sap-api-integrations-sales-pricing-condition-reads
+RUN go build -o sap-api-integrations-sales-pricing-reads
 
 # Runtime Container
 FROM alpine:3.14
 RUN apk add --no-cache libc6-compat
-ENV SERVICE=sap-api-integrations-sales-pricing-condition-reads \
+ENV SERVICE=sap-api-integrations-sales-pricing-reads \
     APP_DIR="${AION_HOME}/${POSITION}/${SERVICE}"
 
 WORKDIR ${AION_HOME}
 
-COPY --from=builder /go/src/github.com/latonaio/sap-api-integrations-sales-pricing-condition-reads .
+COPY --from=builder /go/src/github.com/latonaio/sap-api-integrations-sales-pricing-reads .
 COPY --from=builder /go/src/github.com/latonaio/sample.json .
 
-CMD ["./sap-api-integrations-sales-pricing-condition-reads"]
+CMD ["./sap-api-integrations-sales-pricing-reads"]
